@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CHARTGENIE</title>
+</head>
+<body>
+
+    <img id="spine" src="/spine.PNG" alt="">
+<span>
+    <form action="" id="sign">
+        <select name="" id="new-visit">
+            <label for=""></label>
+        </select>
+
+        <h1 id="s">S</h1>
+        <h1 id="o">O</h1>
+        <h1 id="a">A</h1>
+        <h1 id="p">P</h1>
+
+        <textarea name="" id="soap" cols="30" rows="10"></textarea>
+
+
+        <section id="c-listing">
+            <input class="segment" type="button" value="C1" id="c-btn">
+            <input class="segment" type="button" value="C2" id="c-btn">
+            <input class="segment" type="button" value="C3" id="c-btn">
+            <input class="segment" type="button" value="C4" id="c-btn">
+            <input class="segment" type="button" value="C5" id="c-btn">
+            <input class="segment" type="button" value="C6" id="c-btn">
+            <input class="segment" type="button" value="C7" id="c-btn">
+        </section>
+        <section id="t-listing">
+            <input class="segment" type="button" value="T1" id="t-btn">
+            <input class="segment" type="button" value="T2" id="t-btn">
+            <input class="segment" type="button" value="T3" id="t-btn">
+            <input class="segment" type="button" value="T4" id="t-btn">
+            <input class="segment" type="button" value="T5" id="t-btn">
+            <input class="segment" type="button" value="T6" id="t-btn">
+            <input class="segment" type="button" value="T7" id="t-btn">
+            <input class="segment" type="button" value="T8" id="t-btn">
+            <input class="segment" type="button" value="T9" id="t-btn">
+            <input class="segment" type="button" value="T10" id="t-btn">
+            <input class="segment" type="button" value="T11" id="t-btn">
+            <input class="segment" type="button" value="T12" id="t-btn">
+        </section>
+        <section id="l-listing">
+            <input class="segment" type="button" value="L1" id="l-btn">
+            <input class="segment" type="button" value="L2" id="l-btn">
+            <input class="segment" type="button" value="L3" id="l-btn">
+            <input class="segment" type="button" value="L4" id="l-btn">
+            <input class="segment" type="button" value="L5" id="l-btn">
+        </section>
+
+        <button>
+            Sign
+        </button>
+
+    </form>
+</span>
+
+<span class="patient-portal">
+    <div>
+        Notes
+        <select name="" type="date" id="appointment" placeholder="Date">
+            Date
+        </select>
+
+        <div id="visitHistory" style="max-height: 200px; overflow-y: scroll;"></div>
+    </div>
+    <section class="viewer"></section>
+</span>
+
+    <div id="logo-box">
+        <img id="logo" src="/chartgenie2.png" alt="">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
